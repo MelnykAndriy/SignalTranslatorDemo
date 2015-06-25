@@ -1,0 +1,10 @@
+
+
+PROGRAM GENAPROGRAM; (* some comment is here *)
+VAR J : INTEGER [0 .. 65356];
+    I : FLOAT [0 .. 255];
+
+BEGIN
+
+
+END.

@@ -1,0 +1,13 @@
+
+
+PROGRAM TEST; (* some comment is here *)
+
+BEGIN
+
+    VARIABLE4 := 200;
+
+    LOOP
+
+    ENDLOOP;
+
+END.

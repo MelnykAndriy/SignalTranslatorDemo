@@ -1,0 +1,46 @@
+
+#parser
+
+<signal-program> --> <program>
+
+<program> --> PROGRAM <procedure-identifier> ;
+              <block> .
+
+<block> --> <variable-declarations> BEGIN
+            <statements-list> END
+
+<variable-declarations> --> VAR <declarations-list> | <empty>
+
+<declarations-list> --> <declaration> <declarations-list> | <empty>
+
+<declaration> --> <variable-identifier> : <attribute> <attributes-list> ;
+
+<attributes-list> --> <attribute> <attributes-list> | <empty>
+
+<attribute> --> INTEGER | FLOAT | [<range>]
+
+<range> --> <unsigned-integer> .. <unsigned-integer>
+
+<statements-list> --> <statement> <statements-list> | <empty>
+
+<statement> --> <variable> := <expression> ; | LOOP <statements-list> ENDLOOP ;
+
+<expression> --> <variable> | <unsigned-integer>
+
+<variable> --> <variable-identifier><dimension>
+
+<dimension> --> [ <expression> ] | <empty>
+
+<variable-identifier> --> <identifier>
+
+<procedure-identifier> --> <identifier>
+
+#lexer
+
+<identifier> --> <letter> <string>
+<string> --> <letter><string> | <digit><string> | <empty>
+<letter> --> A | B | C | D | ... | Z
+
+<unsigned-integer> --> <digit> <digits-string>
+<digits-string> --> <digit> <digits-string> | <empty>
+<digit> --> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9

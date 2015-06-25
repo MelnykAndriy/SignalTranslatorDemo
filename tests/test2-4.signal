@@ -1,0 +1,9 @@
+
+
+PROGRAM TEST; (* some comment is here *)
+VAR VARIABLE1 : INTEGER ;
+    VARIABLE2 : FLOAT;
+
+BEGIN
+
+END.

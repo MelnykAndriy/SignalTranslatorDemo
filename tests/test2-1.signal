@@ -1,0 +1,15 @@
+
+
+PROGRAM TEST; (* some comment is here *)
+VAR FLOAT : INTEGER ;
+
+BEGIN
+
+(*    LOOP
+        (*
+            What is this empty loop doing here ?
+        *)
+
+
+
+END.

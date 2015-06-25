@@ -1,0 +1,7 @@
+
+
+PROGRAM TEST;
+VAR I : INTEGER FLOAT;
+    X : [0..5];
+BEGIN
+END.

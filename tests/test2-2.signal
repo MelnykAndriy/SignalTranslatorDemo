@@ -1,0 +1,10 @@
+
+
+PROGRAM TEST; (* some comment is here *)
+VAR VARIABLE3 : INTEGER [0 .. 255];
+
+BEGIN
+
+    VARIABLE3 := 1;
+
+END.

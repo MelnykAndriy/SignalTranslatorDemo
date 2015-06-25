@@ -1,0 +1,31 @@
+
+
+PROGRAM TEST; (* some comment is here *)
+VAR VARIABLE1 : INTEGER ;
+    VARIABLE2 : INTEGER [0 .. 65356];
+    VARIABLE3 : INTEGER [128 .. 255] ;
+    VARIABLE4 : FLOAT; (* another is here *)
+    VARIABLE5 : FLOAT [ 0 .. 100000];
+    INDEX : INTEGER;
+    ARR : INTEGER [0 .. 5];
+
+BEGIN
+    VARIABLE2 := 15;
+
+    LOOP
+        VARIABLE2 := 0;
+        (*
+            What is this empty loop doing here ?
+        *)
+    ENDLOOP;
+
+
+    LOOP
+        INDEX := 1;
+        ARR[ VARIABLE2[INDEX] ] := 5;
+
+        (* LOOP inside LOOP, WOOW *)
+
+    ENDLOOP;
+
+END.
